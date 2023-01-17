@@ -19,10 +19,16 @@
 
       flex: 0 0 calc(calc(100% - 15rem) / var(--items-per-screen));
       max-width: calc(calc(100% - 15rem) / var(--items-per-screen));
+
+      /* max-height: 300px;
+      max-width: 220px; */
+
+      /* min-width: 220px;
+      min-height: 300px; */
     }
 
     .app-card:hover {
-      transform: scale(1.07);
+      transform: scale(1.06);
     }
 
     .card-content {
@@ -43,36 +49,54 @@
   </style>
   <title>Affiliate</title>
 </head>
+<!-- Mobile First -->
 
 <body>
-  <div id="hero" class="bg-[url('cover.png')] h-screen bg-cover bg-no-repeat bg-right flex flex-col">
+  <div id="hero" class="flex flex-col h-screen bg-[url('cover.png')] bg-cover bg-no-repeat bg-center">
     <header>
-      <div class="flex justify-between items-center py-9 px-28">
+      <div class="flex items-center py-9 px-28">
         <div class="h-12">
           <img class="h-full w-full" src="logo.png" alt="logo" />
-        </div>
-        <div>
-          <button class="py-2.5 px-6 bg-primary text-white text-lg font-bold">
-            Play in Browser
-          </button>
         </div>
       </div>
     </header>
 
     <main class="h-full">
-      <div class="flex flex-col gap-y-2.5 py-36 px-28">
-        <h2 class="text-white font-bold text-6xl">ChocoTaco’s Picks</h2>
-        <p class="text-white text-2xl">Check out my favorite Android games on Now.gg</p>
-      </div>
-      <div class="overflow-hidden pl-28">
-        <div>
-          <button disabled="true"
-            class="handle left-handle w-9 h-9 bg-primary text-white after:content-['\2039'] text-3xl hover:bg-hover-accent"></button>
-          <button
-            class="handle right-handle w-9 h-9 bg-primary text-white after:content-['\203A'] text-3xl hover:bg-hover-accent"></button>
+      <div class="flex flex-col h-full justify-around">
+
+        <div class="flex items-center gap-x-8 px-28">
+          <div class="h-20 w-20 lg:h-40 lg:w-40">
+            <img class="h-full w-full" src="user.png" alt="user" />
+          </div>
+
+          <div class="flex flex-col gap-y-2.5">
+            <h2 class="text-white font-bold text-3xl lg:text-5xl">ChocoTaco’s Picks</h2>
+            <p class="text-white font-normal text-base lg:text-2xl">Check out my favorite Android games on Now.gg</p>
+            <div class="flex gap-x-2">
+              <div class="w-9 h-9 lg:w-10 lg:h-10">
+                <img class="h-full w-full" src="twitch.png" alt="twitch">
+              </div>
+              <div class="w-9 h-9 lg:w-10 lg:h-10">
+                <img class="h-full w-full" src="youtube.png" alt="youtube">
+              </div>
+              <div class="w-9 h-9 lg:w-10 lg:h-10">
+                <img class="h-full w-full" src="discord.png" alt="discord">
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="slider" class="flex py-3 gap-x-12"></div>
+        <div class="overflow-x-hidden pl-28">
+          <div class="flex gap-x-5">
+            <button disabled="true"
+              class="handle left-handle rounded-lg w-9 h-9 bg-primary text-white after:content-['\2039'] text-3xl hover:bg-hover-accent"></button>
+            <button
+              class="handle right-handle rounded-lg w-9 h-9 bg-primary text-white after:content-['\203A'] text-3xl hover:bg-hover-accent"></button>
+          </div>
+
+          <div id="slider" class="flex py-3 mt-8 gap-x-12"></div>
+        </div>
+
       </div>
     </main>
 

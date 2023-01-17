@@ -10,20 +10,17 @@ function renderItems(data) {
     const container = document.createElement("div");
     container.classList.add(
       "app-card",
-      "bg-cover",
-      "bg-no-repeat",
-      "border-light",
       "border",
-      "h-80",
+      "border-light",
       "hover:border-2",
       "hover:border-white",
       "overflow-hidden",
       "relative",
-      "rounded-xl"
+      "rounded-xl",
     );
 
     const img = document.createElement("img");
-    img.classList.add("h-full", "w-full");
+    img.classList.add("w-full", "h-full");
     img.src = game.icon_url;
     img.alt = game.game_name;
 
@@ -109,10 +106,10 @@ const items_per_screen = parseInt(
 );
 const expression = totalChilds % items_per_screen;
 
-if (expression !== 0) {
-  const additionalData = data.games.slice(0, expression);
-  renderItems(additionalData);
-}
+// if (expression !== 0) {
+//   const additionalData = data.games.slice(0, expression);
+//   renderItems(additionalData);
+// }
 
 function onHandleClick(handle) {
   const maxIndex = Math.ceil(slider.children.length / 6) - 1;

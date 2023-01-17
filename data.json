@@ -13,7 +13,37 @@
     },
     {
       "game_name": "Squid Game (Roblox mini game)",
+      "icon_url": "roblox_squid_game.png",
+      "play_url": "https://now.gg/play/roblox-corporation/5349/roblox?dl=squid-game",
+      "type": "Arcade"
+    },
+    {
+      "game_name": "Super Sus",
+      "icon_url": "https://cdn.now.gg/apps-content/com.je.supersus/game-tiles/super-sus.jpg",
+      "play_url": "https://now.gg/play/pi-productions/9433/super-sus",
+      "type": "Arcade"
+    },
+    {
+      "game_name": "Toca Life World: Build stories",
+      "icon_url": "https://cdn.now.gg/apps-content/com.tocaboca.tocalifeworld/game-tiles/toca-life-world.jpg",
+      "play_url": "https://now.gg/play/toca-boca/4458/toca-life-world",
+      "type": "Arcade"
+    },
+    {
+      "game_name": "Gacha Club",
+      "icon_url": "https://cdn.now.gg/apps-content/air.com.lunime.gachaclub/game-tiles/gacha-club.jpg",
+      "play_url": "https://now.gg/play/lunime/2132/gacha-club",
+      "type": "Arcade"
+    },
+    {
+      "game_name": "Roblox",
       "icon_url": "https://cdn.now.gg/apps-content/com.roblox.client/game-tiles/roblox.jpg",
+      "play_url": "https://now.gg/play/roblox-corporation/5349/roblox",
+      "type": "Arcade"
+    },
+    {
+      "game_name": "Squid Game (Roblox mini game)",
+      "icon_url": "roblox_squid_game.png",
       "play_url": "https://now.gg/play/roblox-corporation/5349/roblox?dl=squid-game",
       "type": "Arcade"
     },
